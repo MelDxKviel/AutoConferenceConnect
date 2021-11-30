@@ -4,10 +4,10 @@ import time
 import json
 
 
-def autoconnection(conf):
+def auto_connection(conf):
     if conf['dayofweek'] == datetime.datetime.today().weekday() \
-    and conf['hour'] == datetime.datetime.today().hour \
-    and conf['minute'] == datetime.datetime.today().minute:
+            and conf['hour'] == datetime.datetime.today().hour \
+            and conf['minute'] == datetime.datetime.today().minute:
         if conf['platform'] == 'Zoom':
             webbrowser.open(conf['link'], new=2)
             if conf['reconnect']:
@@ -20,7 +20,6 @@ def autoconnection(conf):
         elif conf['platform'] == 'Google':
             webbrowser.open(conf['link'], new=2)
             time.sleep(60)
-    
 
 
 def main():
@@ -29,7 +28,7 @@ def main():
 
     while True:
         for conf in confs:
-            autoconnection(conf)
+            auto_connection(conf)
         time.sleep(30)
 
 

@@ -1,10 +1,10 @@
 [
-    {
-        "link":"link", 
-        "platform":"Zoom", 
-        "reconnect":true, 
-        "dayofweek":1, 
-        "hour":22, 
-        "minute":27
-    }
+  {
+    "link": "link",
+    "platform": "Zoom",
+    "reconnect": true,
+    "dayofweek": 1,
+    "hour": 22,
+    "minute": 27
+  }
 ]
